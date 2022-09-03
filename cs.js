@@ -17,7 +17,7 @@ if(pls()>0){
 setInterval(function(){
 dy.innerText=Math.round(p/86400);
 hr.innerText=Math.round((pls() % 86400)/3600);
-sc.innerText=Math.round(((pls() % 86400)%3600)%60);
+sc.innerText=Math.round(((p % 86400)%3600)%60);
 if(parseInt(sc.innerText)<30){
 mn.innerText=Math.round(((pls() % 86400)%3600)/60)+1;
 }else{
