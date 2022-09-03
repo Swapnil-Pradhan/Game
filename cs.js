@@ -14,12 +14,12 @@ return (t1-Date.now())/1000;
 if(pls()>0){
 setInterval(function(){
 dy.innerText=Math.round(pls()/86400);
-hr.innerText=Math.round((pls() % 86400)/3600);
-sc.innerText=Math.round(((pls() % 86400)%3600)%60);
+hr.innerText=Math.round((pls()%86400)/3600);
+sc.innerText=Math.round(((pls()%86400)%3600)%60);
 if(parseInt(sc.innerText)<30){
-mn.innerText=Math.round(((pls() % 86400)%3600)/60)+1;
+mn.innerText=Math.round(((pls()%86400)%3600)/60)+1;
 }else{
-mn.innerText=Math.round(((pls() % 86400)%3600)/60);
+mn.innerText=Math.round(((pls()%86400)%3600)/60);
 }
 if(parseInt(sc.innerText)<10){
 sc.innerText="0"+sc.innerText;
