@@ -47,5 +47,3 @@ play.style.height="9vh";
 play.style.width="34%";
 }, 3000);
 }, 800);
-
-document.getElementById("live").src="live.js?version="+Date.now();
