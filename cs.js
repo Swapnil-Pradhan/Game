@@ -35,9 +35,15 @@ dy.innerText="0"+dy.innerText;
 }
 }, 1000);
 }else{
-play.style.display="flex";
 document.querySelectorAll("#j").forEach(k=>{
-k.classList.add("gh");
+k.style.animation="over 2s linear";
+setTimeout(()=>{
+k.style.opacity="0";
+setTimeout(()=>{
+k.style.display="none";
+play.style.display="flex";
+}, 1000);
+}, 2000);
 });
 }
 
