@@ -216,3 +216,18 @@ box-shadow: 0 0 0 0px rgba(256, 256, 256, 0.5);
 box-shadow: 0 0 0 25px rgba(256, 256, 256, 0);
 }
 }
+
+@keyframes over{
+from{
+content: "00";
+}
+25%{
+content: "";
+}
+50%{
+content: "00";
+}
+to{
+content: "";
+}
+}
