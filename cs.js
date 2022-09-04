@@ -4,8 +4,8 @@ com=document.getElementById("cs"),
 dy=document.getElementById("dy"),
 hr=document.getElementById("hr"),
 mn=document.getElementById("mn"),
-sc=document.getElementById("sc"),
-t1 = new Date("2022-09-27 00:00:00").getTime();
+sc=document.getElementById("sc");
+let t1 = new Date("2022-09-27 00:00:00").getTime();
 
 function pls(){
 return (t1-Date.now())/1000;
