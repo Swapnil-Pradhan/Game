@@ -33,6 +33,18 @@ hr.innerText="0"+hr.innerText;
 if(parseInt(dy.innerText)<10){
 dy.innerText="0"+dy.innerText;
 }
+if(pls()<1){
+document.querySelectorAll("#j").forEach(k=>{
+k.style.animation="over 2s linear";
+setTimeout(()=>{
+k.style.opacity="0";
+setTimeout(()=>{
+k.style.display="none";
+play.style.display="flex";
+}, 1000);
+}, 2000);
+});
+}
 }, 1000);
 }else{
 document.querySelectorAll("#j").forEach(k=>{
