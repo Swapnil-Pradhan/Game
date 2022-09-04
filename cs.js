@@ -34,7 +34,7 @@ if(parseInt(dy.innerText)<10){
 dy.innerText="0"+dy.innerText;
 }
 if(pls()<1){
-com.innerHTML="Out Now!";
+clearInterval(interval);
 document.querySelectorAll("#j").forEach(m=>{
 m.style.animation="over 2s linear";
 setTimeout(()=>{
@@ -44,21 +44,21 @@ play.style.opacity="0";
 setTimeout(()=>{
 m.style.display="none";
 play.style.opacity="1";
-clearInterval(interval);
 }, 1000);
+com.innerHTML="Out Now!";
 }, 2000);
 });
 }
 }, 1000);
 }else{
-com.innerHTML="Out Now!";
-document.querySelectorAll("#j").forEach(k=>{
-k.style.animation="over 2s linear";
+document.querySelectorAll("#j").forEach(m=>{
+m.style.animation="over 2s linear";
 setTimeout(()=>{
-k.style.opacity="0";
+m.style.opacity="0";
 setTimeout(()=>{
-k.style.display="none";
+m.style.display="none";
 play.style.display="flex";
+com.innerHTML="Out Now!";
 }, 1000);
 }, 2000);
 });
