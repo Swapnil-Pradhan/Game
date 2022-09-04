@@ -5,7 +5,7 @@ dy=document.getElementById("dy"),
 hr=document.getElementById("hr"),
 mn=document.getElementById("mn"),
 sc=document.getElementById("sc");
-let let maxParticleCount=96, particleSpeed=2,
+let maxParticleCount=96, particleSpeed=2,
     toggleConfetti, removeConfetti, startConfetti, stopConfetti,
    timeleft, t1 = new Date("2022-09-27 00:00:00").getTime();
 
