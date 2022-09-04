@@ -36,7 +36,7 @@ dy.innerText="0"+dy.innerText;
 }, 1000);
 }else{
 play.style.display="flex";
-document.querySelectorAll("#j").forEach("k"=>{
+document.querySelectorAll("#j").forEach(k=>{
 k.classList.add("gh");
 });
 }
