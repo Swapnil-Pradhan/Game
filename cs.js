@@ -12,7 +12,7 @@ return (t1-Date.now())/1000;
 }
 
 if(pls()>0){
-setInterval(function(){
+var interval = setInterval(function(){
 dy.innerText=Math.round(pls()/86400);
 hr.innerText=Math.round((pls()%86400)/3600);
 sc.innerText=Math.round(((pls()%86400)%3600)%60);
@@ -34,13 +34,14 @@ if(parseInt(dy.innerText)<10){
 dy.innerText="0"+dy.innerText;
 }
 if(pls()<1){
-document.querySelectorAll("#j").forEach(k=>{
-k.style.animation="over 2s linear";
+document.querySelectorAll("#j").forEach(m=>{
+m.style.animation="over 2s linear";
 setTimeout(()=>{
-k.style.opacity="0";
+m.style.opacity="0";
 setTimeout(()=>{
-k.style.display="none";
+m.style.display="none";
 play.style.display="flex";
+clearInterval(interval);
 }, 1000);
 }, 2000);
 });
