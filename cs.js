@@ -34,13 +34,16 @@ if(parseInt(dy.innerText)<10){
 dy.innerText="0"+dy.innerText;
 }
 if(pls()<1){
+com.innerHTML="Out Now!";
 document.querySelectorAll("#j").forEach(m=>{
 m.style.animation="over 2s linear";
 setTimeout(()=>{
 m.style.opacity="0";
+play.style.display="flex";
+play.style.opacity="0";
 setTimeout(()=>{
 m.style.display="none";
-play.style.display="flex";
+play.style.opacity="1";
 clearInterval(interval);
 }, 1000);
 }, 2000);
@@ -48,6 +51,7 @@ clearInterval(interval);
 }
 }, 1000);
 }else{
+com.innerHTML="Out Now!";
 document.querySelectorAll("#j").forEach(k=>{
 k.style.animation="over 2s linear";
 setTimeout(()=>{
