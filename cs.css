@@ -124,6 +124,7 @@ max-width: 9%;
 min-width: 9%;
 opacity: 1;
 animation: sz .6s ease-out;
+transition: .7s;
 }
 
 @keyframes sz{
