@@ -196,3 +196,13 @@ i--;
 }
 }
 })();
+
+function idk(){
+document.getElementById('boder').style.animation='stop 2s infinite alternate ease-in-out';
+}
+
+function idk2(){
+document.getElementById('boder').style.animation='rotate 5s infinite ease-in-out'
+}
+
+
