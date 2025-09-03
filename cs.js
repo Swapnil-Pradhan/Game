@@ -7,7 +7,7 @@ mn=document.getElementById("mn"),
 sc=document.getElementById("sc");
 let maxParticleCount=96, particleSpeed=2,
     toggleConfetti, removeConfetti, startConfetti, stopConfetti,
-   timeleft, t1 = new Date("2024-09-27 00:00:00").getTime();
+   timeleft, t1 = new Date("2026-09-27 00:00:00").getTime();
 
 function pls(){
 return (t1-Date.now())/1000;
